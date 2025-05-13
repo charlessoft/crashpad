@@ -66,5 +66,7 @@ jobs:
         with:
           name: Crashpad_Windows_build_${{ matrix.generator }}_${{ github.sha }}
           path: Crashpad_Windows_build.zip
+          retention-days: 3 # <= 这里可以设置保留天数
+
 
   
